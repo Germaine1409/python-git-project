@@ -1,5 +1,6 @@
 # print("--- MISSION 1: Break the Cipher Lock ---")
 print()
+consonant = 0
 # Prompt the user to enter an encrypted message
 message = input("Enter your encrypted message: ")
 
@@ -14,6 +15,8 @@ for char in message:
     # Check if the character is a vowel
     if char in "aeiou":
         vowel_count_1 += 1
+    else:
+        consonant += 1
 
 # Display the total number of vowels found
 print("Vowels detected:", vowel_count_1)
@@ -32,6 +35,8 @@ for char in message:
     # Check if the character is a vowel
     if char in "aeiou":
         vowel_count_2 += 1
+    else:
+        consonant += 1
 
 # Display the total number of vowels found
 print("Vowels detected:", vowel_count_2)
@@ -50,6 +55,8 @@ for char in message:
     # Check if the character is a vowel
     if char in "aeiou":
         vowel_count_3 += 1
+    else:
+        consonant += 1
 
 # Display the total number of vowels found
 print("Vowels detected:", vowel_count_3)
@@ -68,6 +75,8 @@ for char in message:
     # Check if the character is a vowel
     if char in "aeiou":
         vowel_count_4 += 1
+    else:
+        consonant += 1
 
 # Display the total number of vowels found
 print("Vowels detected:", vowel_count_4)
@@ -83,6 +92,7 @@ for char in message:
         vowel_count += 1
 
 print(f"Vowels detected: {vowel_count}")
+print(f"Consonants detected: {consonant}")
 print()
 
 # Get the number of rows for the diamond
@@ -95,3 +105,5 @@ for i in range(1, num_rows + 1):
 # Lower half
 for i in range(num_rows - 1, 0, -1):
     print(" " * (num_rows - i) + "*" * (2 * i - 1))
+
+
